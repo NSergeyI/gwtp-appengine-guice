@@ -1,10 +1,10 @@
 package com.yardox.client.application.home;
 
-import javax.inject.Inject;
+//import javax.inject.Inject;
 
 import com.yardox.client.application.ApplicationPresenter;
 import com.yardox.client.place.NameTokens;
-//import com.google.inject.Inject;
+import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;

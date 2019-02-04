@@ -35,10 +35,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <webappDirectory>
-            C:\\Users\\user\\workspace\\sample\\sampleGwtpGaeGuice\\target/gwtp-appengine-guice-archetype-1.5.3
+            C:\\Users\\JavaDev\\workspace\\gwtp-appengine-guice\\target/gwtp-appengine-guice-archetype-1.5.3
         </webappDirectory>
         <gae.home>
-            C:\\Users\\user\\.m2\\repository/com/google/appengine/appengine-java-sdk/${gae.version}/appengine-java-sdk-${gae.version}/appengine-java-sdk-${gae.version}
+            C:\\Users\\JavaDev\\.m2\\repository/com/google/appengine/appengine-java-sdk/${gae.version}/appengine-java-sdk-${gae.version}/appengine-java-sdk-${gae.version}
         </gae.home>
     </properties>
 
@@ -53,6 +53,11 @@
 
         <plugins>
             <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>appengine-maven-plugin</artifactId>
+                <version>1.3.2</version>
+            </plugin>
+            <!--<plugin>
                 <groupId>com.google.appengine</groupId>
                 <artifactId>appengine-maven-plugin</artifactId>
                 <version>${gae.version}</version>
@@ -60,7 +65,7 @@
                     <enableJarSplitting>true</enableJarSplitting>
                     <port>8888</port>
                 </configuration>
-            </plugin>
+            </plugin>-->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

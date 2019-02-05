@@ -131,14 +131,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Other -->
-        <!--<dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>${servlet-api.version}</version>
-            <scope>runtime</scope>
-        </dependency>-->
-
         <!-- Test -->
         <dependency>
             <groupId>junit</groupId>
@@ -169,6 +161,18 @@
             <artifactId>appengine-testing</artifactId>
             <version>${gae.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- AutoAdd -->
+        <dependency>
+            <groupId>com.googlecode.objectify</groupId>
+            <artifactId>objectify</artifactId>
+            <version>5.1.22</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.http-client</groupId>
+            <artifactId>google-http-client</artifactId>
+            <version>1.27.0</version>
         </dependency>
     </dependencies>
 </project>

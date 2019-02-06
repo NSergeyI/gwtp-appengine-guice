@@ -12,7 +12,11 @@ import com.gwtplatform.mvp.client.presenter.slots.NestedSlot;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.Proxy;
 
+import com.yardox.client.dispatch.AsyncCallbackImpl;
+import com.yardox.client.event.LoginResetEvent;
 import com.yardox.client.security.IsLoggedInGatekeeper;
+import com.yardox.shared.action.SignOutAction;
+import com.yardox.shared.action.SignOutResult;
 
 public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView, ApplicationPresenter.MyProxy>
         implements ApplicationUiHandlers {
@@ -44,12 +48,12 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
 
     @Override
     public void onSignOutClick() {
-        /*dispatcher.execute(new SignOutAction(), new AsyncCallbackImpl<SignOutResult>() {
+        dispatcher.execute(new SignOutAction(), new AsyncCallbackImpl<SignOutResult>() {
             @Override
             public void onSuccess(SignOutResult result) {
                 getEventBus().fireEvent(new LoginResetEvent());
                 placeManager.revealCurrentPlace();
             }
-        });*/
+        });
     }
 }

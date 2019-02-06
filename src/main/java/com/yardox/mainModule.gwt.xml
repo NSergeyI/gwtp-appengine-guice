@@ -6,6 +6,7 @@
     <inherits name='com.google.gwt.inject.Inject' />
     <inherits name="com.gwtplatform.mvp.MvpWithEntryPoint"/>
     <inherits name="com.gwtplatform.dispatch.rpc.DispatchRpc"/>
+    <inherits name="org.gwtbootstrap3.GwtBootstrap3"/>
 
     <extend-configuration-property name="gin.ginjector.modules"
                                    value="com.yardox.client.gin.ClientModule"/>

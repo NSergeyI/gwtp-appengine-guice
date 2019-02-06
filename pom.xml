@@ -10,6 +10,16 @@
 
     <name>GWTP AppEngine Guice</name>
 
+    <developers>
+        <developer>
+            <name>Nikitin Sergey</name>
+            <email>yardox@gmail.com</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
     <properties>
         <!-- client -->
         <gwtp.version>1.6</gwtp.version>
@@ -52,6 +62,24 @@
         </resources>
 
         <plugins>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.1</version>
+                <configuration>
+                    <rulesUri>
+                        https://raw.githubusercontent.com/ArcBees/ArcBees-tools/master/resources/versions-ruleset.xml
+                    </rulesUri>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.coveo</groupId>
+                <artifactId>fmt-maven-plugin</artifactId>
+                <version>2.4.0</version>
+            </plugin>
+
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>appengine-maven-plugin</artifactId>
@@ -66,7 +94,12 @@
                     <source>${target.jdk}</source>
                     <target>${target.jdk}</target>
                     <encoding>UTF-8</encoding>
-                    <proc>none</proc>
+                    <!--<proc>none</proc>-->
+                   <!-- <annotationProcessors>
+                        <annotationProcessor>com.gwtplatform.dispatch.annotation.processor.GenEventProcessor</annotationProcessor>
+                        <annotationProcessor>com.gwtplatform.dispatch.annotation.processor.GenDtoProcessor</annotationProcessor>
+                        <annotationProcessor>com.gwtplatform.dispatch.annotation.processor.GenDispatchProcessor</annotationProcessor>
+                    </annotationProcessors>-->
                 </configuration>
             </plugin>
 
@@ -173,6 +206,41 @@
             <groupId>com.google.http-client</groupId>
             <artifactId>google-http-client</artifactId>
             <version>1.27.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.gwtbootstrap3</groupId>
+            <artifactId>gwtbootstrap3</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-tools-sdk</artifactId>
+            <version>1.9.71</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client</artifactId>
+            <version>1.27.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.http-client</groupId>
+            <artifactId>google-http-client-appengine</artifactId>
+            <version>1.21.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.http-client</groupId>
+            <artifactId>google-http-client-jackson2</artifactId>
+            <version>1.27.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-oauth2</artifactId>
+            <version>v2-rev137-1.23.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-sheets</artifactId>
+            <version>v4-rev553-1.25.0</version>
         </dependency>
     </dependencies>
 </project>

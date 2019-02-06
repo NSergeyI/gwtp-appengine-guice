@@ -3,6 +3,7 @@ package com.yardox.client.gin;
 import com.gwtplatform.dispatch.rpc.client.gin.RpcDispatchAsyncModule;
 import com.gwtplatform.mvp.shared.proxy.RouteTokenFormatter;
 import com.yardox.client.application.ApplicationModule;
+import com.yardox.client.login.LoginModule;
 import com.yardox.client.place.NameTokens;
 import com.gwtplatform.mvp.client.annotations.DefaultPlace;
 import com.gwtplatform.mvp.client.annotations.ErrorPlace;
@@ -18,7 +19,7 @@ public class ClientModule extends AbstractPresenterModule {
         install(new RpcDispatchAsyncModule.Builder().build());
 
         install(new ApplicationModule());
-////        install(new LoginModule());
+        install(new LoginModule());
 
         // DefaultPlaceManager Places
         bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.HOME);

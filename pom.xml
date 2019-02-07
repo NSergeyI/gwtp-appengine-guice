@@ -44,7 +44,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <webappDirectory>
-            C:\\Users\\JavaDev\\workspace\\gwtp-appengine-guice\\target/gwtp-appengine-guice
+            C:\\Users\\JavaDev\\workspace\\test\\gwtp-appengine-guice\\target/gwtp-appengine-guice
+            <!--${project.basedir}/target/gwtp-appengine-guice-->
         </webappDirectory>
         <gae.home>
             C:\\Users\\JavaDev\\.m2\\repository/com/google/appengine/appengine-java-sdk/${gae.version}/appengine-java-sdk-${gae.version}/appengine-java-sdk-${gae.version}

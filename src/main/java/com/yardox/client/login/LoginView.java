@@ -45,7 +45,7 @@ class LoginView extends ViewWithUiHandlers<LoginUiHandlers> implements LoginPres
 		}		
 	}
 	
-	//@UiHandler("signOut")
+//	@UiHandler("signOut")
 	public void onSignOutClick(ClickEvent event) {
 		getUiHandlers().onSignOutClick();
 	}

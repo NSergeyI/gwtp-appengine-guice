@@ -4,15 +4,25 @@
 <module rename-to='mainModule'>
     <inherits name='com.google.gwt.user.User'/>
     <inherits name='com.google.gwt.inject.Inject'/>
-    <inherits name="com.gwtplatform.mvp.MvpWithEntryPoint"/>
-    <inherits name="com.gwtplatform.dispatch.rpc.DispatchRpc"/>
+    <!--new-->
+    <inherits name='com.google.gwt.user.theme.clean.Clean'/>
+
     <inherits name="org.gwtbootstrap3.GwtBootstrap3"/>
+    <!--new-->
+    <inherits name='com.gwtplatform.dispatch.Dispatch'/>
 
-    <extend-configuration-property name="gin.ginjector.modules"
-                                   value="com.yardox.client.gin.ClientModule"/>
+    <inherits name="com.gwtplatform.mvp.MvpWithEntryPoint"/>
+    <!--new-->
+    <!--<inherits name="com.gwtplatform.dispatch.rpc.DispatchRpc"/>-->
 
-    <set-configuration-property name="gwtp.bootstrapper"
-                                value="com.yardox.client.gin.BootstrapperImpl"/>
+    <!-- Default client module -->
+    <set-configuration-property
+            name="gin.ginjector.modules"
+            value="com.yardox.client.gin.ClientModule"/>
+
+    <set-configuration-property
+            name="gwtp.bootstrapper"
+            value="com.yardox.client.gin.BootstrapperImpl"/>
 
     <!-- Specify the paths for translatable code                    -->
     <source path='client'/>

@@ -1,5 +1,6 @@
 package com.yardox.client.login;
 
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.Window;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.dispatch.rpc.shared.DispatchAsync;
@@ -42,7 +43,7 @@ public class LoginPresenter extends Presenter<LoginPresenter.MyView, LoginPresen
 	LoginPresenter(final EventBus eventBus, final MyView view, final MyProxy proxy,
                    final IsLoggedInGatekeeper gatekeeper, final DispatchAsync dispatcher, final PlaceManager placeManager) {
 		super(eventBus, view, proxy, RevealType.Root);
-
+		GWT.log("LoginPresenter");
 		this.gatekeeper = gatekeeper;
 		this.dispatcher = dispatcher;
 		this.placeManager = placeManager;

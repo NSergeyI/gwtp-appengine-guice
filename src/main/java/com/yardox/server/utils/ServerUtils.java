@@ -10,7 +10,7 @@ import com.google.appengine.api.utils.SystemProperty;
 import com.gwtplatform.dispatch.shared.ActionException;
 
 import java.io.FileInputStream;
-import java.io.FileWriter;
+//import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -75,7 +75,7 @@ public class ServerUtils {
 		Properties spreadsheetsIdProp = new Properties();
 //		spreadsheetsIdProp.load(new FileInputStream(PATH_FILE_PROPERTIES));
 		spreadsheetsIdProp.setProperty("id",id);
-		spreadsheetsIdProp.store(new FileWriter(PATH_FILE_PROPERTIES),"");
+//		spreadsheetsIdProp.store(new FileWriter(PATH_FILE_PROPERTIES),"");
 		String result = getSpreadsheetsId();
 		return result;
 	}

@@ -11,6 +11,11 @@ import com.gwtplatform.mvp.client.annotations.UnauthorizedPlace;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import com.gwtplatform.mvp.client.gin.DefaultModule;
 
+/**
+ * See more on setting up the PlaceManager on <a href="// See more on:
+ * https://github.com/ArcBees/GWTP/wiki/PlaceManager">DefaultModule's >
+ * DefaultPlaceManager</a>
+ */
 public class ClientModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
@@ -24,6 +29,6 @@ public class ClientModule extends AbstractPresenterModule {
         // DefaultPlaceManager Places
         bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.HOME);
         bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.HOME);
-        bindConstant().annotatedWith(UnauthorizedPlace.class).to(NameTokens.HOME);
+        bindConstant().annotatedWith(UnauthorizedPlace.class).to(NameTokens.LOGIN);
     }
 }

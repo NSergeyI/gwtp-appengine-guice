@@ -10,7 +10,7 @@ import com.yardox.shared.TooManyResultsException;
 
 import java.util.*;
 
-public class BaseDao<T>{
+public abstract class BaseDao<T>{
     private final Class<T> clazz;
 
     protected BaseDao(final Class<T> clazz) {

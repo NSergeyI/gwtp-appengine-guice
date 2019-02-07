@@ -4,7 +4,7 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 
 import java.io.Serializable;
 
-public class Dto implements Serializable {
+public class Dto implements IsSerializable,Serializable {
     private static final long serialVersionUID = 1L;
 
     private Long id;

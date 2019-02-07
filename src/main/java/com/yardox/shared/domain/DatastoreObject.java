@@ -7,7 +7,7 @@ import com.googlecode.objectify.annotation.OnSave;
 import java.io.Serializable;
 import java.util.Date;
 
-public class DatastoreObject implements Serializable {
+public class DatastoreObject implements IsSerializable, Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id

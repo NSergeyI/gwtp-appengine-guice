@@ -9,10 +9,6 @@ import com.yardox.shared.action.GetUsersResult;
 import com.yardox.shared.dto.UserDto;
 import com.gwtplatform.dispatch.rpc.server.ExecutionContext;
 import com.gwtplatform.dispatch.shared.ActionException;
-import com.yardox.domain.AppUser;
-import com.yardox.server.dao.AppUserDao;
-import com.yardox.server.utils.ServerUtils;
-import com.yardox.shared.dto.UserDto;
 
 import javax.inject.Inject;
 import java.util.ArrayList;

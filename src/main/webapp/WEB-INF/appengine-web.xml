@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
-    <application>mainModule</application>
+
+    <version>version-ignored-at-deploy-time-and-only-as-a-temporary-workaround</version>
+
+    <service>ui</service>
+
+    <threadsafe>true</threadsafe>
+
+    <sessions-enabled>true</sessions-enabled>
+
+    <runtime>java8</runtime>
+
+    <instance-class>F1</instance-class>
+
+    <automatic-scaling>
+        <!-- min-idle-instances>2</min-idle-instances> <max-pending-latency>1s</max-pending-latency>
+            <min-pending-latency>1s</min-pending-latency -->
+    </automatic-scaling>
+
+    <resource-files>
+        <include path="/resources/*" />
+    </resource-files>
+    <!--<application>mainModule</application>
     <version>1</version>
 
     <threadsafe>true</threadsafe>
 
-    <!-- Configure serving/caching of GWT files -->
+    &lt;!&ndash; Configure serving/caching of GWT files &ndash;&gt;
     <static-files>
         <include path="**"/>
         <include path="**.nocache.*" expiration="0s"/>
@@ -13,8 +34,8 @@
         <exclude path="**.gwt.rpc"/>
     </static-files>
 
-    <!-- Configure java.util.logging -->
+    &lt;!&ndash; Configure java.util.logging &ndash;&gt;
     <system-properties>
         <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
-    </system-properties>
+    </system-properties>-->
 </appengine-web-app>

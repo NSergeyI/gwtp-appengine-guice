@@ -9,7 +9,7 @@ import com.yardox.server.utils.ServerUtils;
 
 import javax.inject.Singleton;
 
-public class DispatchServletModule extends ServletModule {
+public class MyServletModule extends ServletModule {
     @Override
     protected void configureServlets() {
         // GWT-platform commands servlet

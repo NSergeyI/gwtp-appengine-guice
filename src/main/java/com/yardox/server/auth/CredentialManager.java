@@ -47,7 +47,7 @@ public class CredentialManager {
      */
     public static final List<String> SCOPES = Arrays.asList(
             // Required to identify the user in our data store.
-            "openid", Oauth2Scopes.USERINFO_EMAIL, Oauth2Scopes.USERINFO_PROFILE, SheetsScopes.SPREADSHEETS);
+            "openid", Oauth2Scopes.USERINFO_EMAIL, Oauth2Scopes.USERINFO_PROFILE);
 
     /**
      * Client secrets object.

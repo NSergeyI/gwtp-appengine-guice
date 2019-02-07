@@ -7,6 +7,12 @@ Project structure \ Project compiler output \ C:\Users\JavaDev\workspace\test\gw
 run configuration проверить artifact to deploy
 run 
 
+или
+запуск 
+mvn compile gwt:compile appengine:run
+devmode
+mvn gwt:codeserver
+
 Регистрация GAE
 https://console.developers.google.com/
 create new project
